@@ -1,6 +1,6 @@
 import { Address } from '@elrondnetwork/erdjs/out';
-import { numberToHex, stringToHex } from './convert';
-import { DataBuilder } from './DataBuilder';
+import { numberToHex, stringToHex } from '../src/convert';
+import { DataBuilder } from '../src/DataBuilder';
 
 const NAME = 'MyToken';
 const TICKER = 'TICKER';

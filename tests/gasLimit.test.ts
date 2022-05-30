@@ -1,4 +1,4 @@
-import { TransferFeesCalculator } from './gasLimit';
+import { TransferFeesCalculator } from '../src/gasLimit';
 
 describe('calculate data fees', () => {
     it('should return the correct gas limit', () => {

@@ -1,5 +1,5 @@
 import { Address } from '@elrondnetwork/erdjs/out';
-import { getNonceFromData, truncateAddress, truncateStringByEnd } from './string';
+import { getNonceFromData, truncateAddress, truncateStringByEnd } from '../src/string';
 
 describe('truncate address', () => {
     it('should truncate a string', () => {

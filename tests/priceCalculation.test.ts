@@ -1,5 +1,5 @@
 import { BigNumber } from 'bignumber.js';
-import { calculatePriceFromNft, ERR_PRICE_LIST_TOO_SMALL } from './priceCalculation';
+import { calculatePriceFromNft, ERR_PRICE_LIST_TOO_SMALL } from '../src/priceCalculation';
 
 describe('calculate price', () => {
     const priceList = [

@@ -1,4 +1,4 @@
-import { addThousandSeparator, humanizeNumber, humanizeVariableName } from './humanize';
+import { addThousandSeparator, humanizeNumber, humanizeVariableName } from '../src/humanize';
 
 
 describe('humanizeNumber', () => {

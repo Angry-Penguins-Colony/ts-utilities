@@ -1,5 +1,5 @@
 import { BigNumber } from 'bignumber.js';
-import { egldToWei, gasFeesToEgld, numberToHex, prependIfOdd, tokenDecimalToInt, weiToEgld } from './convert';
+import { egldToWei, gasFeesToEgld, numberToHex, prependIfOdd, tokenDecimalToInt, weiToEgld } from '../src/convert';
 
 
 describe('egld to wei', () => {

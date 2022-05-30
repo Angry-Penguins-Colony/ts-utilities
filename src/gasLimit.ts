@@ -5,7 +5,7 @@ const gasPrices = {
     nftTransfer: 1_000_000
 };
 
-export default class TransferFeesCalculator {
+export class TransferFeesCalculator {
     public static calculateSimpleTransferGasFees(data: string): number {
 
         const baseFee = gasPrices.simpleEgldTransfer;

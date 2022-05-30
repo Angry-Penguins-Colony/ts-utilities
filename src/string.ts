@@ -32,7 +32,7 @@ export function truncateAddress(address: Address, displayCharCount: number) {
     }
 }
 
-export function cut_nonce(str: string) {
+export function cutNonce(str: string) {
     const split = str.split('-').length;
 
     if (split == 2) {
@@ -48,11 +48,11 @@ export function cut_nonce(str: string) {
     }
 }
 
-export function get_nonce(str: string): number {
+export function getNonce(str: string): number {
     const split = str.split('-').length;
 
     if (split == 3) {
-        return hex_to_number(str.substring(str.lastIndexOf('-') + 1));
+        return hexToNumber(str.substring(str.lastIndexOf('-') + 1));
     }
     else {
         if (!str) throw Error('str is empty');
@@ -60,7 +60,7 @@ export function get_nonce(str: string): number {
     }
 }
 
-export function hex_to_number(hex: string): number {
+export function hexToNumber(hex: string): number {
     const output = parseInt(hex, 16);
 
     if (isNaN(output)) throw Error('Hex is not a number');

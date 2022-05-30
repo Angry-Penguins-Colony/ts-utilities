@@ -1,0 +1,28 @@
+{
+  "name": "ts-utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angry-Penguins-Colony/ts-utilities.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Angry-Penguins-Colony/ts-utilities/issues"
+  },
+  "homepage": "https://github.com/Angry-Penguins-Colony/ts-utilities#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.3"
+  },
+  "dependencies": {
+    "@elrondnetwork/erdjs": "^9.0.3",
+    "typescript": "^4.7.2"
+  }
+}

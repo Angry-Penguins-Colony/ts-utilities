@@ -11,8 +11,6 @@
     "build": "tsc",
     "test": "jest",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test",
-    "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
   "repository": {

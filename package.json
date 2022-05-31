@@ -1,33 +1,39 @@
 {
-  "name": "ts-utilities",
+  "name": "ts-apc-utilities",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
+    "build": "npx tsc",
+    "prepare": "npm run build",
+    "prepublish": "npm run build",
+    "postinstall": "npm run build",
+    "prepack": "npm run build",
     "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Angry-Penguins-Colony/ts-utilities.git"
   },
-  "author": "",
+  "author": "Angry Penguins Colony",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Angry-Penguins-Colony/ts-utilities/issues"
-  },
-  "homepage": "https://github.com/Angry-Penguins-Colony/ts-utilities#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
     "@types/jest": "^27.5.1",
+    "@types/ledgerhq__hw-transport-node-hid": "^4.22.2",
+    "babel-loader": "^8.2.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "jest": "^28.1.0",
-    "ts-jest": "^28.0.3"
-  },
-  "dependencies": {
-    "@elrondnetwork/erdjs": "^9.0.3",
+    "ts-jest": "^28.0.3",
     "typescript": "^4.7.2"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ]
+  "dependencies": {
+    "@elrondnetwork/erdjs": "^9.0.3"
+  }
 }

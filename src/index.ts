@@ -1,4 +1,4 @@
-export { arraysEqual } from "./src/array";
+export { arraysEqual } from "./array";
 export {
     numberToHex,
     prependIfOdd,
@@ -8,24 +8,24 @@ export {
     weiToEgld,
     b64ToNumber,
     gasFeesToEgld
-} from "./src/convert";
-export { DataBuilder } from "./src/DataBuilder";
-export { TransferFeesCalculator } from "./src/gasLimit";
+} from "./convert";
+export { DataBuilder } from "./DataBuilder";
+export { TransferFeesCalculator } from "./gasLimit";
 export {
     humanizeBigNumber,
     humanizeEgldBalance,
     humanizeNumber,
     humanizeVariableName,
     addThousandSeparator
-} from "./src/humanize";
+} from "./humanize";
 export {
     getAddressFromPEM,
     getSessionIdFromSearchParams,
     sleep,
     download,
     isValidHttpUrl
-} from "./src/misc";
-export { calculatePriceFromNft } from "./src/priceCalculation";
+} from "./misc";
+export { calculatePriceFromNft } from "./priceCalculation";
 export {
     truncateAddress,
     truncateString,
@@ -36,4 +36,4 @@ export {
     getNonceFromData,
     isAlphaNumeric,
     isUppercase
-} from "./src/string";
+} from "./string";

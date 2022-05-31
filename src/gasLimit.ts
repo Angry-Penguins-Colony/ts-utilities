@@ -1,8 +1,8 @@
 const gasPrices = {
-    simpleEgldTransfer: 50_000,
-    esdtTransfer: 500_000,
-    perDataByte: 1_500,
-    nftTransfer: 1_000_000
+    simpleEgldTransfer: 50000,
+    esdtTransfer: 500000,
+    perDataByte: 1500,
+    nftTransfer: 1000000,
 };
 
 export class TransferFeesCalculator {

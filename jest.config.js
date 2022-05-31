@@ -4,7 +4,5 @@ module.exports = {
   testEnvironment: 'node',
   coverageReporters: [
     "json-summary",
-    "text",
-    "lcov",
   ]
 };

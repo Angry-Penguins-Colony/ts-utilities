@@ -58,7 +58,7 @@ export function weiToEgld(wei: BigNumber): number {
     return egld;
 }
 
-export function b64ToNumber(base64: string): number {
+export function b64HexToNumber(base64: string): number {
     return parseInt(Buffer.from(base64, 'base64').toString('hex'), 16);
 }
 

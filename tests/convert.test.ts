@@ -1,5 +1,5 @@
 import { BigNumber } from 'bignumber.js';
-import { egldToWei, gasFeesToEgld, numberToHex, prependIfOdd, tokenDecimalToInt, weiToEgld } from '../src/convert';
+import { b64HexToNumber, egldToWei, gasFeesToEgld, numberToHex, prependIfOdd, tokenDecimalToInt, weiToEgld } from '../src/convert';
 
 
 describe('egld to wei', () => {
@@ -19,6 +19,16 @@ describe('egld to wei', () => {
         expect(egldToWei(10)).toBe('10' + '0'.repeat(18));
     });
 });
+
+describe("b64 to number", () => {
+    it("convert 1", () => {
+        expect(b64HexToNumber("AQ==")).toBe(1);
+    });
+
+    it("convert 2", () => {
+        expect(b64HexToNumber("Ag==")).toBe(2);
+    });
+})
 
 
 describe('wei to egld', () => {

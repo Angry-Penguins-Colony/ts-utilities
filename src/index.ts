@@ -6,13 +6,12 @@ export {
     tokenDecimalToInt,
     egldToWei,
     weiToEgld,
-    b64ToNumber,
+    b64HexToNumber as b64ToNumber,
     gasFeesToEgld
 } from "./convert";
 export { DataBuilder } from "./DataBuilder";
 export { TransferFeesCalculator } from "./gasLimit";
 export {
-    humanizeBigNumber,
     humanizeEgldBalance,
     humanizeNumber,
     humanizeVariableName,

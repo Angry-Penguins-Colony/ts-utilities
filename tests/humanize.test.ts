@@ -1,4 +1,5 @@
-import { addThousandSeparator, humanizeNumber, humanizeVariableName } from '../src/humanize';
+import { Balance } from '@elrondnetwork/erdjs/out';
+import { addThousandSeparator, humanizeEgldBalance, humanizeNumber, humanizeVariableName } from '../src/humanize';
 
 
 describe('humanizeNumber', () => {
@@ -26,3 +27,13 @@ it('humanize variable name', () => {
 
     expect(humanizeVariableName('myVariable')).toBe('My Variable');
 });
+
+describe("humanize egld balance", () => {
+    it("humanize to integer", () => {
+        expect(humanizeEgldBalance(Balance.egld("1.005"), 1)).toBe('1');
+    });
+
+    it("humanize to floating", () => {
+        expect(humanizeEgldBalance(Balance.egld("1.005"), 4)).toBe('1.005');
+    });
+})

@@ -8,11 +8,7 @@ export function humanizeEgldBalance(balance: Balance, precision = 3): string {
         .toString();
 }
 
-export function humanizeBigNumber(n: BigNumber): string {
-    return addThousandSeparator(n.toString(), ' ');
-}
-
-export function humanizeNumber(n: number): string {
+export function humanizeNumber(n: number | BigNumber): string {
     return addThousandSeparator(n.toString(), ' ');
 }
 

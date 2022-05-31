@@ -11,7 +11,7 @@
     "build": "tsc",
     "test": "jest",
     "test:coverage": "npm test -- --coverage",
-    "make-badges:ci": "npm run test:coverage && istanbul-badges-readme --ci",
+    "make-badges:ci": "npm run test:coverage && istanbul-badges-readme",
     "prepare": "npm run build",
     "postversion": "git push && git push --tags"
   },

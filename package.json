@@ -38,10 +38,5 @@
   },
   "dependencies": {
     "@elrondnetwork/erdjs": "^9.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run make-badges && git add 'Update code codecoverage of README.md'"
-    }
   }
 }

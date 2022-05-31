@@ -10,6 +10,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
+    "test:coverage": "npm test -- --coverage",
+    "test:badges": "npm run test:coverage  && jest-coverage-badges",
     "prepare": "npm run build",
     "postversion": "git push && git push --tags"
   },
@@ -33,6 +35,7 @@
     "typescript": "^4.7.2"
   },
   "dependencies": {
-    "@elrondnetwork/erdjs": "^9.0.3"
+    "@elrondnetwork/erdjs": "^9.0.3",
+    "jest-coverage-badges": "^1.1.2"
   }
 }

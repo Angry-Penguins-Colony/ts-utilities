@@ -12,7 +12,7 @@
     "test": "jest",
     "test:coverage": "npm test -- --coverage",
     "make-badges": "npm run test:coverage && istanbul-badges-readme",
-    "prepare": "npm run build",
+    "prepare": "husky install && npm run build",
     "postversion": "git push && git push --tags"
   },
   "repository": {

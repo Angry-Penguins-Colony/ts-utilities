@@ -11,7 +11,7 @@
     "build": "tsc",
     "test": "jest",
     "test:coverage": "npm test -- --coverage",
-    "make-badges:ci": "npm run test:coverage && istanbul-badges-readme",
+    "make-badges": "npm run test:coverage && istanbul-badges-readme",
     "prepare": "npm run build",
     "postversion": "git push && git push --tags"
   },
@@ -30,6 +30,7 @@
     "babel-loader": "^8.2.5",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "husky": "^8.0.1",
     "istanbul-badges-readme": "^1.8.1",
     "jest": "^28.1.0",
     "ts-jest": "^28.0.3",
@@ -37,5 +38,10 @@
   },
   "dependencies": {
     "@elrondnetwork/erdjs": "^9.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run make-badges && git add 'Update code codecoverage of README.md'"
+    }
   }
 }

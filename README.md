@@ -1,4 +1,5 @@
 [![NPM Publish](https://github.com/Angry-Penguins-Colony/ts-utilities/actions/workflows/npm_publish.yml/badge.svg)](https://github.com/Angry-Penguins-Colony/ts-utilities/actions/workflows/npm_publish.yml)
+[![Node.js CI](https://github.com/Angry-Penguins-Colony/ts-utilities/actions/workflows/node.js.yml/badge.svg)](https://github.com/Angry-Penguins-Colony/ts-utilities/actions/workflows/node.js.yml)
 
 # ts-apc-utils
 

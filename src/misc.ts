@@ -47,7 +47,7 @@ export function isValidHttpUrl(urlToTest: string): boolean {
     return !!pattern.test(urlToTest);
 }
 
-export async function calculateHashes(fileList: FileList) {
+export async function calculateHashes(fileList: FileList, ignoredFilename?: string[]) {
 
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const Hash = require('ipfs-only-hash');
@@ -56,6 +56,8 @@ export async function calculateHashes(fileList: FileList) {
 
     for (let i = 0; i < fileList.length; i++) {
         const file = fileList[i];
+
+        if (ignoredFilename && ignoredFilename.includes(file.name)) continue;
 
         const arrayBuffer = await file.arrayBuffer();
         const uint = new Uint8Array(arrayBuffer);

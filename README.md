@@ -3,7 +3,7 @@
 
 | Statements                                                                                 | Branches                                                                               | Functions                                                                           | Lines                                                                            |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| ![Statements](https://img.shields.io/badge/statements-72.89%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-66.66%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-76.36%25-red.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-73%25-red.svg?style=flat) |
+| ![Statements](https://img.shields.io/badge/statements-72.22%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-63.33%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-76.36%25-red.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-72.63%25-red.svg?style=flat) |
 
 # ts-apc-utils
 

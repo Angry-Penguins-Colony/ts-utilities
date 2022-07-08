@@ -1,5 +1,5 @@
 import { Address } from '@elrondnetwork/erdjs/out';
-import { getNonceFromData, hexToNumber, isAlphaNumeric, isUppercase, truncateAddress, truncateString, truncateStringByEnd } from '../src/string';
+import { capitalize, getNonceFromData, hexToNumber, isAlphaNumeric, isUppercase, truncateAddress, truncateString, truncateStringByEnd } from '../src/string';
 
 describe("truncateString", () => {
     it("should truncate the string", () => {
@@ -84,3 +84,8 @@ describe("isAlphanumeric", () => {
         expect(isAlphaNumeric("abc123@")).toBe(false);
     });
 });
+
+test("capitalize", () => {
+    expect(capitalize("hello")).toStrictEqual("Hello");
+    expect(capitalize("hello world")).toStrictEqual("Hello World");
+})

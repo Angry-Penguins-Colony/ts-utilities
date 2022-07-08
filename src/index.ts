@@ -34,5 +34,6 @@ export {
     hexToNumber,
     getNonceFromData,
     isAlphaNumeric,
-    isUppercase
+    isUppercase,
+    capitalize
 } from "./string";

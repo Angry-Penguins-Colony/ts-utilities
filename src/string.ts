@@ -102,3 +102,10 @@ export function isUppercase(str: string) {
     }
     return true;
 }
+
+export function capitalize(str: string): string {
+
+    return str.split(" ")
+        .map(word => word[0].toUpperCase() + word.slice(1, str.length))
+        .join(" ");
+}
